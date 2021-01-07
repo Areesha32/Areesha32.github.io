@@ -1,0 +1,7 @@
+.env
+vendor/
+vendor/composer
+phpMailer/
+Source/
+composer.json
+composer.lock
