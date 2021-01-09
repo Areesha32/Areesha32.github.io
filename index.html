@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Staging Template">
-    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="description" content="Parakeet Systems">
+    <meta name="keywords" content="software development, web development, web applications, mobile applications, devops">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Parakeet Systems</title>
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <link rel="shortcut icon" href="/staging/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -469,7 +469,8 @@
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $(document).on("scroll", onScroll);
@@ -489,17 +490,14 @@
             });
         });
         function onScroll(event) {
-            console.log("Hello");
             var scrollPos = $(document).scrollTop();
             // Set a variable for our button element.
             const scrollToTopButton = document.getElementById('js-top');
-            console.log("event.target.scrollHeight " + scrollPos);
             $('li>a').each(function () {
                 var currLink = $(this);
                 var refElement = $(currLink.attr("href"));
 
                 if (refElement.offset().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                    console.log("offset " + refElement.offset().top);
                     currLink.parent().addClass('active').siblings().removeClass("active");
                 }
             });
